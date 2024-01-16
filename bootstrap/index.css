@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+/* body {
+  background-color: lightblue;
+} */
+
+.herosection {
+  height: 70vh;
+  width: 100%;
+  background-color: lightblue;
+}
+
+.design {
+  background-color: skyblue;
+}
+
+button {
+  background-color: coral;
+  border: none;
+  color: white;
+}
+
+.shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1 {
+  font-family: serif;
+  font-size: larger;
+  /* font-weight: 4500px; */
+}
+
+#second {
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid gray; */
+  align-items: flex-end;
+}
+
+.outerDiv {
+  height: 220px;
+  width: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 100px 10px #48abe0;
+
+  /* margin: auto; */
+}
+
+.outerDiv::before {
+  content: "";
+  /* background-image: linear-gradient(to right, black, #48abe0, black); */
+  height: 600px;
+  width: 200px;
+  position: absolute;
+  top: -200px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.outerDiv::after {
+  content: "";
+  background-color: black;
+  height: 95%;
+  width: 98%;
+  position: absolute;
+
+  /* border: 1px solid black; */
+}
+
+.innerDiv {
+  height: 180px;
+  width: 380px;
+  /* border: 1px solid black; */
+  /* background-color: black; */
+  z-index: 3;
+}
+
+.hourMinutes {
+  font-family: digital-clock-font;
+  font-size: 100px;
+  font-weight: bolder;
+  color: lightblue;
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.amPm {
+  font-size: 20px;
+  font-weight: bolder;
+  color: coral;
+  z-index: 3;
+}
+
+.seocnds {
+  font-size: 35px;
+  font-weight: bolder;
+  color: lightgreen;
+}
+
+.date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-weight: regular; */
+  font-size: 20px;
+}
+
+.secondDiv {
+  border-top: 1px solid lightblue;
+}
