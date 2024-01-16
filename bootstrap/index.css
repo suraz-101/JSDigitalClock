@@ -115,6 +115,7 @@ h1 {
   font-size: 35px;
   font-weight: bolder;
   color: lightgreen;
+  z-index: 3;
 }
 
 .date {
@@ -127,4 +128,5 @@ h1 {
 
 .secondDiv {
   border-top: 1px solid lightblue;
+  z-index: 3;
 }
