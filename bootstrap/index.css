@@ -98,9 +98,10 @@ h1 {
   font-size: 100px;
   font-weight: bolder;
   color: lightblue;
+}
+.time {
   height: 100%;
 }
-
 .amPm {
   font-size: 20px;
   font-weight: bolder;
@@ -112,7 +113,7 @@ h1 {
   font-size: 35px;
   font-weight: bolder;
   color: lightgreen;
-  z-index: 3;
+  /* z-index: 3; */
 }
 
 .date {
