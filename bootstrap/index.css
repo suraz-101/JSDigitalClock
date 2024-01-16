@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: black;
+  /* background-color: black; */
 }
 
 /* body {
@@ -98,10 +98,7 @@ h1 {
   font-size: 100px;
   font-weight: bolder;
   color: lightblue;
-
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+  height: 100%;
 }
 
 .amPm {
@@ -129,4 +126,15 @@ h1 {
 .secondDiv {
   border-top: 1px solid lightblue;
   z-index: 3;
+}
+
+.wrapper {
+  height: 60vh;
+  width: 100%;
+  /* border: 1px solid white; */
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
