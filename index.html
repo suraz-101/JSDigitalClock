@@ -22,29 +22,31 @@
       <div class="title">
         <h1 class="text-white text-center mt-4">Digital Clock</h1>
       </div>
-      <div class="outerDiv m-auto mt-4">
-        <div class="innerDiv shadow text-white">
-          <div class="firstDiv container row m-auto" style="height: 65%">
+      <div class="row">
+        <div class="outerDiv m-auto mt-4 col-lg-12 col-sm-10">
+          <div class="innerDiv shadow text-white">
+            <div class="firstDiv container row m-auto" style="height: 65%">
+              <div
+                class="col-1 amPm d-flex justify-content-start align-items-start pt-2 time"
+                id="amPm"
+              ></div>
+              <div
+                class="col-10 hourMinutes d-flex justify-content-center align-items-center time"
+                id="Time"
+              ></div>
+              <div
+                class="col-1 seocnds d-flex justify-content-end align-items-end pb-2 time"
+                id="second"
+              ></div>
+            </div>
             <div
-              class="col-1 amPm d-flex justify-content-start align-items-start pt-2 time"
-              id="amPm"
-            ></div>
-            <div
-              class="col-10 hourMinutes d-flex justify-content-center align-items-center time"
-              id="Time"
-            ></div>
-            <div
-              class="col-1 seocnds d-flex justify-content-end align-items-end pb-2 time"
-              id="second"
-            ></div>
-          </div>
-          <div
-            class="secondDiv container row m-auto border"
-            style="height: 35%"
-          >
-            <div class="col date" id="month"></div>
-            <div class="col date" id="day"></div>
-            <div class="col date" id="date"></div>
+              class="secondDiv container row m-auto border"
+              style="height: 35%"
+            >
+              <div class="col date" id="month"></div>
+              <div class="col date" id="day"></div>
+              <div class="col date" id="date"></div>
+            </div>
           </div>
         </div>
       </div>

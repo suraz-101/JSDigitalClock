@@ -44,16 +44,32 @@ h1 {
 
 .outerDiv {
   height: 220px;
-  width: 420px;
+  /* width: 420px; */
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: black;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 0 100px 10px #48abe0;
+
+  animation: glow 10s linear infinite;
 
   /* margin: auto; */
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 100px 10px #48abe0;
+  }
+  25% {
+    box-shadow: 0 0 150px 10px #4855e0;
+  }
+  50% {
+    box-shadow: 0 0 100px 10px #8f48e0;
+  }
+  100% {
+    box-shadow: 0 0 100px 10px #48d1e0;
+  }
 }
 
 .outerDiv::before {
@@ -130,7 +146,7 @@ h1 {
 }
 
 .wrapper {
-  height: 200vh;
+  height: 100vh;
   width: 100%;
   /* border: 1px solid white; */
   background-color: black;
