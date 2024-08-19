@@ -41,7 +41,7 @@ const time = () => {
   document.getElementById("second").innerHTML = second;
   document.getElementById("date").innerHTML = year;
   document.getElementById("month").innerHTML = calculateMonth(mon) + "-" + dat;
-  document.getElementById("day").innerHTML = calculateDay(day);
+  document.getElementById("day").innerHTML = day;
 
   //   document.getElementById("time").innerHTML =
   //     dat +
