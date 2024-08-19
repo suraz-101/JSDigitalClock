@@ -40,7 +40,7 @@ const time = () => {
 
   document.getElementById("second").innerHTML = second;
   document.getElementById("date").innerHTML = year;
-  document.getElementById("month").innerHTML = dat;
+  document.getElementById("month").innerHTML = calculateMonth(mon) + "-" + dat;
   document.getElementById("day").innerHTML = calculateDay(day);
 
   //   document.getElementById("time").innerHTML =
@@ -62,8 +62,8 @@ setInterval(time, 1000);
 // const dat = date.getDate();
 // const month = date.getMonth();
 
-const calculateMonth = (month) => {
-  switch (month) {
+const calculateMonth = (mon) => {
+  switch (mon) {
     case 0:
       return "Jan";
     case 1:
@@ -78,15 +78,15 @@ const calculateMonth = (month) => {
       return "Jun";
     case 6:
       return "Jul";
-    case 6:
+    case 7:
       return "Aug";
-    case 6:
+    case 8:
       return "Sep";
-    case 6:
+    case 9:
       return "Oct";
-    case 6:
+    case 10:
       return "Nov";
-    case 6:
+    case 11:
       return "Dec";
   }
 };
